@@ -45,7 +45,7 @@ values."
      ;; mineo-rtags ;; private
      my-rtags ;; private
      org
-     osx
+     ;; osx
      ;; python
      ;; semantic
      ;; (shell :variables
