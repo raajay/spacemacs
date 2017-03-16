@@ -32,17 +32,18 @@ values."
    dotspacemacs-configuration-layers
    '(
      ansible
-     ;; auto-completion
-     ;; (c-c++ :variables
-     ;;        c-c++-default-mode-for-headers 'c++mode
-     ;;        c-c++-enable-clang-support t)
+     auto-completion
+     (c-c++ :variables
+            c-c++-default-mode-for-headers 'c++mode
+            c-c++-enable-clang-support t)
      helm
-     ;; better-defaults
+     better-defaults
      emacs-lisp
      git
      latex
      markdown
      ;; mineo-rtags ;; private
+     my-rtags ;; private
      org
      osx
      ;; python
@@ -52,7 +53,7 @@ values."
      ;;        shell-default-position 'bottom)
      spell-checking
      syntax-checking
-     ;; themes-megapack
+     themes-megapack
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
