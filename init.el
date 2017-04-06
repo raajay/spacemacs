@@ -43,7 +43,7 @@ values."
      latex
      markdown
      ;; mineo-rtags ;; private
-     my-rtags ;; private
+     ;; my-rtags ;; private
      org
      ;; osx
      ;; python
@@ -72,7 +72,7 @@ values."
    ;; `used-but-keep-unused' installs only the used packages but won't uninstall
    ;; them if they become unused. `all' installs *all* packages supported by
    ;; Spacemacs and never uninstall them. (default is `used-only')
-   dotspacemacs-install-packages 'used-but-keep-unused))
+   dotspacemacs-install-packages 'used-only))
 
 (defun dotspacemacs/init ()
   "Initialization function.
@@ -227,7 +227,7 @@ values."
    dotspacemacs-loading-progress-bar t
    ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup t
+   dotspacemacs-fullscreen-at-startup nil
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX. (default nil)
    dotspacemacs-fullscreen-use-non-native nil
@@ -313,7 +313,7 @@ you should place your code here."
 
   ;; Pad 2 spaces to line numbers
   (unless (display-graphic-p)
-    (setq linum-format "%d  "))
+    (setq linum-format "%4d "))
 
   ) ;; end of dotspacemacs/user-config
 
